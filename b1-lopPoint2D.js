@@ -1,4 +1,6 @@
 class point2D {
+    // dia = 1;
+    // juxta = 1;
     constructor(dia, juxta) {
         this.dia = dia;
         this.juxta = juxta;
@@ -8,12 +10,22 @@ class point2D {
         this.juxta = Number(prompt("Nhập tung độ: "));
     }
     print() {
-        // console.log("hoành độ:", this.dia, "tung độ: ", this.juxta);
-        console.log(" point có tọa độ: (" +
-            this.dia + ", " +
-            this.juxta + ")");
+            // console.log("hoành độ:", this.dia, "tung độ: ", this.juxta);
+            console.log(" point có tọa độ: (" +
+                this.dia + ", " +
+                this.juxta + ")");
 
-    }
+        }
+        //thiếu chsu thích kiểu tham số??
+        // set setPoint(point = new point2D()) {
+        //         this.dia = point.dia;
+        //         this.juxta = point.juxta;
+        //     }
+        // get getPoint() {
+        //     return `${this.dia} ${this.juxta}`;
+        // }
+
+
     move() {
         let dx = Number(prompt("Điểm tung độ mới: "));
         let dy = Number(prompt("Điểm hoành độ mới: "))
@@ -29,7 +41,12 @@ class point2D {
 
 // let point = new point2D();
 // let point2 = new point2D();
+// point2.scan();
 // point.scan();
+// point.s(point2);
+// point.setPoint(point2);
+// console.log(point.getPoint)
+// point.print();
 // point.print();
 // point2.scan();
 // point2.print();
