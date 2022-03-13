@@ -16,14 +16,14 @@ class point2D {
                 this.juxta + ")");
 
         }
-        //thiếu chsu thích kiểu tham số??
-        // set setPoint(point = new point2D()) {
-        //         this.dia = point.dia;
-        //         this.juxta = point.juxta;
-        //     }
-        // get getPoint() {
-        //     return `${this.dia} ${this.juxta}`;
-        // }
+        // vì sao set hiện thông báo lỗi ?
+    set setPoint(newPoint) {
+        this.dia = newPoint.dia;
+        this.juxta = newPoint.juxta;
+    }
+    get getPoint() {
+        return `${this.dia} ${this.juxta}`;
+    }
 
 
     move() {
@@ -40,6 +40,10 @@ class point2D {
 }
 
 // let point = new point2D();
+// let point2 = new point2D();
+// point2.scan();
+// point.setPoint = point2;
+// console.log(point);
 // let point2 = new point2D();
 // point2.scan();
 // point.scan();

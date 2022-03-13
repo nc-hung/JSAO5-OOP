@@ -175,12 +175,11 @@ class Fraction {
 let a = new Fraction();
 let b = new Fraction();
 let c = new Fraction();
-a.scan();
-b.scan();
-
-console.log(a.soSanhPS(b));
-a.boolEqual(a.soSanhPS(b), b);
-a.boolLessThan(a.soSanhPS(b), b);
+// a.scan();
+// b.scan();
+// console.log(a.soSanhPS(b));
+// a.boolEqual(a.soSanhPS(b), b);
+// a.boolLessThan(a.soSanhPS(b), b);
 // console.log(a.UCLN(a.numerator, a.denominator))
 // c = a.reduce(a.UCLN(a.numerator, a.denominator));
 // b.scan();
