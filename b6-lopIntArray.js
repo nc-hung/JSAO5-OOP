@@ -112,28 +112,41 @@ class IntArray {
             return this.array;
         }
         /**
-         * Xóa phần tử tại vị trí idx trong mảng, 
+         * Xóa phần tử tại vị trí index trong mảng, 
          * trả về phần tử bị xóa.
          *  Phương thức này có thể được dùng
          *  để xóa hết tất cả các phần tử trong mảng nếu người gọi hàm không truyền vào idx.
          */
     erase() {
-
+        let index = Number(prompt("Nhập vị trí cần xóa: "));
+        let remove = this.array.splice(index, 1);
+        console.log(remove);
+        console.log(this.array);
     }
 
     /**
      * Sao chép mảng từ vị trí start đến vị trí end
      */
     clone() {
-
+        let start = Number(prompt("Nhập vị trí bắt đầu: "));
+        let end = Number(prompt("Nhập vị trí kết thúc: "));
+        if (end > this.array.length - 1) {
+            console.log("Vượt quá độ dài mảng!")
+        } else {
+            for (let i = start; i <= end; i++) {
+                this.array.push(this.array[i]);
+            }
+        }
+        // console.log(this.array);
+        // return this.array;
     }
-
 }
 let a = new IntArray();
 let p = [1, 4, 3];
 a.scan();
 a.print();
-a.addElements(p)
+// a.addElements(p)
+a.clone();
 console.log(a.array);
 // a.getElement();
 // a.addHead();
