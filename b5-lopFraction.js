@@ -197,3 +197,4 @@ let c = new Fraction();
 // console.log(d)
 // console.log(a.normalize())
 // a.print();
+export default Fraction;

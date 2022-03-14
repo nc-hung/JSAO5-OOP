@@ -141,12 +141,12 @@ class IntArray {
         // return this.array;
     }
 }
-let a = new IntArray();
-let p = [1, 4, 3];
-a.scan();
-a.print();
+// let a = new IntArray();
+// let p = [1, 4, 3];
+// a.scan();
+// a.print();
 // a.addElements(p)
-a.clone();
-console.log(a.array);
+// a.clone();
+// console.log(a.array);
 // a.getElement();
 // a.addHead();

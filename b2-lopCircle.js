@@ -28,6 +28,7 @@ class Circle {
         let area = Math.pow((this.radius), 2) * 3.14;
         console.log("Diện tích hình tròn là: ", area);
     }
+
 }
 
 // let a = new point2D();
