@@ -1,4 +1,5 @@
 import Fraction from './b5-lopFraction.js'
+import IntArray from './b6-lopIntArray.js';
 
 class FractionList {
     // ps = new Fraction();
@@ -71,11 +72,64 @@ class FractionList {
          * @returns 
          */
     back() {
-        return this.list[this.list.length - 1];
-    }
+            return this.list[this.list.length - 1];
+        }
+        /**
+         * 
+         * @param {Number} n 
+         * @param {Fraction} ps 
+         */
+    assign(n, ps) {
+            if (n > 0) {
+                for (let i = 0; i < n; i++) {
+                    this.list.push(ps);
+                }
+                return this.list;
+            }
+
+        }
+        /**
+         * push một phần tử vào cuối mảng
+         * @param {Fraction} ps 
+         */
+    push_back(ps) {
+            return this.list.push(ps);
+        }
+        /**
+         * Xóa một phân số ở cuối danh sách
+         * 
+         */
+    pop_back() {
+
+            return this.list.pop();
+        }
+        // insert() {
+        //     let a = Number(prompt("Nhập 1 để chèn phân số, nhập 2 để chèn mảng phân số:"))
+        //     let index = Number(prompt("Vị trí chèn: "));
+        //     // console.log(frac)
+        //     if (a == 1) {
+        //         let ps = new Fraction();
+        //         ps.scan();
+        //         // this.list.push(ps);
+        //         return this.list.splice(index, 0, ps);
+        //     } else if (a == 2) {
+        //         let psl = new FractionList();
+        //         psl.scan();
+        //         for (let i = 0; i < psl.length; i++) {
+        //             console.log(psl.list, "có vô");
+        //             console.log(psl[i]);
+        //             this.list.splice(index, 0, psl.list[i]);
+        //             index++;
+        //         }
+        //         return this.list;
+        //     }
+        // }
 }
 let a = new FractionList();
+let b = new Fraction();
 a.scan();
+// b.scan();
+a.insert();
 console.log(a.list);
 // a.isEmpty();
 // if (a.isEmpty() == true) {
@@ -83,5 +137,5 @@ console.log(a.list);
 // } else {
 //     console.log("không rỗng")
 // }
-a.at();
+// a.at();
 // console.log(a)

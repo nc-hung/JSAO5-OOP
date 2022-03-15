@@ -150,3 +150,4 @@ class IntArray {
 // console.log(a.array);
 // a.getElement();
 // a.addHead();
+export default IntArray;
